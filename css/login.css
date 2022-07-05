@@ -1,0 +1,139 @@
+body{
+    background-color: linear-gradient(135deg,#07366a 0,#003c7f 100%);   
+    background-image: url(../img/login_bg.png);
+    background-size:cover;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    /* overflow-x: hidden; */
+
+    display: flex;
+    justify-content: center-between;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.login-header{
+    width: 100%;
+    height: auto;
+    text-align: right;
+    padding: 24px 0;
+}
+
+.voltar-unip{
+    text-decoration: none;
+    color: white;
+    padding: 0 24px;
+}
+
+.voltar-unip:hover{
+    text-decoration: underline;
+}
+
+.main{
+    margin-top: 50px;
+    width: 22.5%;
+    height: 350px;
+    padding: 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main img{
+    width: 164px;
+    height: 51px;
+}
+
+.main h1{
+    color: white;
+    text-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+}
+
+.main input{
+    width: 100%;
+    height: 45px;
+    border: 1.5px solid gray;
+    border-radius: 5px;
+}
+
+.main input::-webkit-input-placeholder{
+    color:#777;
+    font-size: 17px;
+    padding-left: 10px;
+}
+.main input::-moz-placeholder {
+    color:#777;
+    font-size: 17px;
+    padding-left: 10px;
+}
+
+.login-submit{
+    width: 100%;
+    height: 48px;
+    color: white;
+    background-color: #28a745;
+    font-size: 20px;
+    border-radius: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.login-submit:hover{
+    background-color: #1f8036;
+}
+
+.forgot{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.forgot button{
+    padding: 10px;
+    width: 47%;
+    color: #007bff;
+    border: 1px solid #007bff;
+    background-color: transparent;
+    border-radius: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+    font-size: 110%;
+}
+
+.forgot button:hover{
+    background-color: #007bff;
+    color: white;
+}
+
+@media(max-width:1024px){
+    .main{
+        width: 30%;
+    }
+}
+
+@media(max-width: 768px){
+    .main{
+        width: 40%;
+    }
+
+    .main h1{
+        font-size: 20px;
+    }
+
+    .main input::-webkit-input-placeholder{
+        font-size: 15px;
+    }
+
+    .forgot button{
+        font-size: 100%;
+    }
+}
+
+@media(max-width: 500px){
+    .main{
+        width: 75%;
+    }
+}
