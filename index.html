@@ -13,12 +13,12 @@
         <!-- Font -->
         <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,531;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,531;1,600;1,700;1,800;1,900&amp;family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
     </head>
-    <body>
+    <body onload="clearLS()">
         <header class="login-header">
             <a href="https://www.unip.br" class="voltar-unip">Voltar para o site da UNIP</a>
         </header>
 
-        <div class="main">
+        <form class="main" id="form">
             <img src="img/logo-unip.svg" alt="Universidade Paulista - UNIP">
             <h1>Área do Aluno</h1>
             <input type="text" id="matricula" placeholder="RA (numero de matrícula)">
@@ -28,7 +28,7 @@
                 <button>Esqueci a senha</button>
                 <button style="color: white;">Como acessar</button>
             </div>
-        </div>
+        </form>
 
         <footer>
             <p>Copyright © 1997-2022 UNIP - Universidade Paulista. Todos os direitos reservados. <a href="https://www.unip.br/universidade/politica-privacidade.aspx" id="privacity">Política de Privacidade</a></p>

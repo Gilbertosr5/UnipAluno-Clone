@@ -12,7 +12,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,531;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,531;1,600;1,700;1,800;1,900&amp;family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
 
     </head>
-    <body>
+    <body onload="loginValidation()">
         <header class="principal-header">
             <div class="header-logo">
                 <img src="../img/logo-unip.svg" alt="Universidade Paulista - UNIP">
@@ -20,16 +20,16 @@
             </div>
             <div class="email-academico">
                 <div>
-                    <p>Nome completo do Alino | <i class="fa fa-envelope" aria-hidden="true"></i></p>
-                    <p>emaildoaluno@aluno.unip.br</p>
+                    <p id="nome">Nome completo do Aluno | <i class="fa fa-envelope" aria-hidden="true"></i></p>
+                    <p id="email">emaildoaluno@aluno.unip.br</p>
                 </div>
-                <button class="logout-btn"><i class="fa fa-sign-out" aria-hidden="true"></i> sair</button>
+                <button class="logout-btn" onclick="logout()"><i class="fa fa-sign-out" aria-hidden="true"></i> sair</button>
             </div>
         </header>
         <main class="main-in">
             <a href="#">Serviços</a>
             <a href="#">Meus Dados</a>
-            <button class="logout-btn logout-btn2"><i class="fa fa-sign-out" aria-hidden="true"></i> sair</button>
+            <button class="logout-btn logout-btn2" onclick="logout()"><i class="fa fa-sign-out" aria-hidden="true"></i> sair</button>
         </main>
         <section>
             <div class="row">
