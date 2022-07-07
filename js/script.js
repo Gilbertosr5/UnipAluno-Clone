@@ -10,6 +10,12 @@ const db = [
         'matricula' : 'T844728',
         'emailAcademico' : 'gilberto.teste@aluno.unip.br',
         'senha' : '12345'
+    },
+    {
+        'nome' : 'Vivian Domingues',
+        'matricula' : 'V050104',
+        'emailAcademico' : 'vivian.domingues3@aluno.unip.br',
+        'senha' : '123654'
     }
 ]
 
