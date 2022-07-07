@@ -48,6 +48,16 @@
     border-radius: 5px;
     font-size: 15px;
     margin-right: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.logout-btn:hover{
+    background-color: #9c2632;
+}
+
+.logout-btn2{
+    display: none;
 }
 
 .fa-sign-out{
@@ -57,9 +67,11 @@
 
 .main-in{
     display: flex;
+    justify-content: flex-start;
 
     background-color: #3292f9;
-    padding: 8px;
+    padding: 8px 0;
+    width: 100%;
 }
 
 .main-in a{
@@ -67,6 +79,12 @@
     text-decoration: none;
     padding: 8px 16px;
     font-size: 17px;
+    transition: 0.4s;
+}
+
+.main-in a:hover{
+    color: rgb(230, 230, 230);
+    text-shadow: 0 0 5px rgba(0, 0, 0, .3);
 }
 
 section{
@@ -143,4 +161,72 @@ footer a{
 footer a:hover{
     color: #f5f53f;
     text-decoration: underline;
+}
+
+@media(max-width: 1024px){
+    .row{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        width: 97%;
+    }
+}
+
+@media(max-width: 800px){
+    .principal-header{
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .email-academico{
+        margin-top: 20px;
+    }
+
+    .row{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media(max-width: 480px){
+    .principal-header{
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .header-logo img{
+        width: 130px;
+        height: 50px;
+    }
+
+    .header-logo h1{
+        font-size: 19px;
+    }
+
+    .email-academico{
+        font-size: 14px;
+        margin-top: 20px;
+    }
+    
+    .main-in{
+        justify-content: space-around;
+    }
+
+    .logout-btn{
+        display: none;
+    }
+
+    .logout-btn2{
+        display: block;
+    }
+
+    section{
+        height: 850px;
+    }
+
+    .row{
+        grid-template-columns: 1fr;
+        width: 95%;
+    }
+
+    footer{
+        position:fixed;
+    }
 }
