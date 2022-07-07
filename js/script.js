@@ -74,3 +74,7 @@ function logout(){
     localStorage.setItem('matricula', null)
     window.location.href = '../index.html'
 }
+
+function clearLS(){
+    alert('ABRA COM LIVE SERVER!')
+}
