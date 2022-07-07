@@ -33,7 +33,7 @@ form.addEventListener('submit', function(e) {
                 console.log('logado')
                 localStorage.setItem('logado', 'True')
                 localStorage.setItem('matricula', matricula)
-                window.location.href = '../html/home.html'
+                window.location.href = 'html/home.html'
             }else{
                 console.log('senha incorreta')
             }
@@ -76,5 +76,5 @@ function logout(){
 }
 
 function clearLS(){
-    alert('ABRA COM LIVE SERVER!')
+    localStorage.clear()
 }
